@@ -11,6 +11,9 @@
 
 (fib 5)
 
+;; This is "tree recursive", with
+;; depth-first execution
+
 ;; >(fib 5)
 ;; > (fib 4)
 ;; > >(fib 3)
