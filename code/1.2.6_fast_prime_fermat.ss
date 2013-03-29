@@ -12,6 +12,9 @@
 (define (square n) (* n n))
 
 ;; this returns base^exp (mod m)
+;; NOTE 1: values reduced by mod m at every step
+;;        (hence efficient even for extremely large inputs)
+;; NOTE 2: square function is used rather than explicit multiply
 (define (expmod base exp m)
   (cond ((= exp 0) 1)
         ((even? exp)
